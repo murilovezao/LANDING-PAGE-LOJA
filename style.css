@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+:root {
+    --altura-cabecalho: 80px;
+    --largura-logo: 180px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    height: var(--altura-cabecalho);
+}
+
+header .logo img {
+    width: var(--largura-logo);
+    height: auto;
+}
+
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('IMAGENS/paisagem.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1; /* Certifique-se de que o texto esteja visível sobre o fundo */
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adiciona contraste */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adiciona contraste */
+}
+
+.hero-content .cta-button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .cta-button:hover {
+    background-color: rgba(124, 28, 43, 0.9);
+}
+
+/* Products Section */
+#products {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.botao{
+    background-color: #06c106;
+    border-radius: 8px;
+    width: 85px;
+    height: 35px;
+    color: #fff;
+    border-color: #fff;
+    
+}
+
+.botao:hover{
+    background-color: #0d6c04;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+
+.product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #e60023;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#contact-form button:hover {
+    background-color: #b8001b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #111;
+    color: white;
+}
+
+
+/* Estilo para o título "Sobre nós" */
+#about h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o texto do parágrafo */
+#about .typewriter {
+    font-family: 'Courier New', Courier, monospace; /* Fonte de máquina de escrever */
+    max-width: 600px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas */
+    word-spacing: 2px; /* Melhora o espaçamento entre palavras */
+    transition: color 0.3s ease; /* Adiciona suavidade no efeito hover */
+    padding: 10px;
+}
+
+/* Efeito hover no parágrafo */
+#about .typewriter:hover {
+    color: #e60023; /* Altera a cor ao passar o mouse */
+}
+ 
